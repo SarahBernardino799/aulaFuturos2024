@@ -1,0 +1,16 @@
+nav{
+    color:rgb(221, 216, 249);
+    background-color: mediumslateblue;
+    
+}
+a{
+    border-style: 1px solid rgb(221, 216, 249);
+    color:rgb(221, 216, 249);
+    background-color: mediumslateblue;
+    text-align: center;
+    text-decoration: none;
+
+}
+#title_logo{
+    text-align: center;
+}
