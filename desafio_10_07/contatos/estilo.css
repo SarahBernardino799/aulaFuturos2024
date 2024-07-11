@@ -8,8 +8,8 @@ body {
     min-height: 100vh;
 }
 .header {
-    background-color:rgb(216, 112, 206); 
-    color: rgb(252, 223, 246);
+    background-color:white;
+    color: rgb(154, 70, 123);
     padding: 10px 0;
     text-align: center;
     
@@ -17,12 +17,15 @@ body {
 }
 .header h1{
     font-family:initial ;
-    text-shadow: rgba(139, 0, 139, 0.56) 1px ;
+    text-shadow: rgba(167, 0, 167, 0.426) 1px ;
+    margin: 0;
+    padding: 0;
+   
 }
 .header nav {
     display: flex;
     justify-content: center;
-    background-color:  rgb(194, 0, 149);
+    background-color: rgb(154, 70, 123);
     text-decoration: none;
 }
 .header nav a {
@@ -49,7 +52,7 @@ body {
     line-height: 1.5;
 }
 .content a {
-    color:#ef57c1a7; 
+    color: rgb(154, 70, 123);
     text-decoration: none;
 }
 .content a:hover {
@@ -57,12 +60,12 @@ body {
 }
 .submit {
     color:white;
-    background-color: lightpink;
+    background-color:  rgb(154, 70, 123);
     border: rgba(255, 255, 255, 0.863) 1px solid;
     
 }
 .footer {
-    background-color: rgb(216, 112, 206); 
+    background-color: rgb(154, 70, 123); 
 
     text-align: center;
     padding: 10px 0;
