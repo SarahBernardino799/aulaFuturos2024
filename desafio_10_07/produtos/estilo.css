@@ -81,35 +81,55 @@ body {
     text-decoration: underline;
 }
 .produtos1 {
-
-    display:inline-table;
-    flex: 1;
+    position: absolute;
     background-color: white;
     padding: 5px;
     border: 1px solid  #ce8ca580;
     border-radius:30px;
     text-align: center;
-    
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:80%;
 }
 .produtos1 p{
-    display:flexbox;
+    
    text-align: center;
     padding: 2px;
  
 }
+.content.produtos1{
+position: relative;
+}
 .produtos2 {
-
-    display:inline-table;
-    flex: 1;
+    position: absolute;
     background-color: white;
     padding: 5px;
     border: 1px solid  #ce8ca580;
     border-radius:30px;
     text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
     
 }
 .produtos2 p{
-    display:flexbox;
+   text-align: center;
+    padding: 2px;
+ 
+}
+.produtos3 {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid  #ce8ca580;
+    border-radius:30px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left:20%;
+    
+}
+.produtos3 p{
    text-align: center;
     padding: 2px;
  
