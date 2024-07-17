@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 .header {
     background-color:white;
@@ -43,13 +44,17 @@ body {
 .content {
     padding: 20px;
     flex: 1;
+    border: #ce8ca5 1px solid;
 }
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
     margin: 10px 0;
+    display: flex;
+    justify-content:space-between;
 }
 .content p {
     margin: 10px 0;
     line-height: 1.5;
+   
 }
 .content a {
     color:#ce8ca5;
@@ -62,6 +67,7 @@ body {
     color:white;
     background-color:  #ce8ca5;
     border: rgba(255, 255, 255, 0.863) 1px solid;
+    text-align: justify;
     
 }
 .footer {

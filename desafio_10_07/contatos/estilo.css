@@ -64,6 +64,9 @@ body {
     border: rgba(255, 255, 255, 0.863) 1px solid;
     
 }
+iframe{
+    border-radius: 50px;
+}
 .footer {
     background-color:#ce8ca5; 
     text-align: center;

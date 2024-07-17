@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+    <title>Produtos</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; /* Remove a margem padrão do body */
+            padding: 0; /* Remove o padding padrão do body */
+        }
+        header {
+            background-color: #333; /* Define a cor de fundo do cabeçalho como cinza escuro */
+            color: white; /* Define a cor do texto do cabeçalho como branco */
+            padding: 10px 0; /* Adiciona um padding vertical de 10px */
+            text-align: center; /* Centraliza o texto no cabeçalho */
+        }
+        nav {
+            background-color: #444; /* Define a cor de fundo da barra de navegação como cinza escuro */
+            overflow: hidden; /* Garante que os conteúdos flutuantes sejam contidos */
+        }
+        nav ul {
+            list-style-type: none; /* Remove os marcadores de lista */
+            margin: 0; /* Remove a margem padrão da lista */
+            padding: 0; /* Remove o padding padrão da lista */
+            text-align: center; /* Centraliza o texto nos itens da lista */
+        }
+        nav ul li {
+            display: inline; /* Exibe os itens da lista em linha */
+        }
+        nav ul li a {
+            display: inline-block; /* Define os links como blocos em linha */
+            color: white; /* Define a cor do texto dos links como branco */
+            padding: 14px 20px; /* Adiciona um padding de 14px vertical e 20px horizontal */
+            text-decoration: none; /* Remove a decoração do texto (sublinhado) */
+            transition: background-color 0.3s; /* Adiciona uma transição suave ao alterar a cor de fundo */
+        }
+        nav ul li a:hover {
+            background-color: #555; /* Altera a cor de fundo dos links ao passar o mouse sobre eles */
+        }
+        .container {
+            display: flex; /* Utiliza Flexbox para organizar os elementos filhos */
+            flex-wrap: wrap; /* Permite que os elementos filhos quebrem para a próxima linha se necessário */
+            justify-content: space-around; /* Distribui os elementos filhos com espaçamento ao redor */
+            padding: 20px; /* Adiciona um padding de 20px ao redor do container */
+        }
+        .produto {
+            border: 1px solid #ddd; /* Adiciona uma borda cinza clara ao redor de cada produto */
+            border-radius: 5px; /* Arredonda os cantos da borda */
+            padding: 10px; /* Adiciona um padding interno de 10px */
+            margin: 10px; /* Adiciona uma margem externa de 10px */
+            width: calc(25% - 40px); /* Define a largura da div como 25% do container menos 40px para a margem e padding */
+            box-sizing: border-box; /* Inclui padding e borda na largura total da div */
+            transition: transform 0.2s; /* Adiciona uma transição suave ao transformar a div */
+        }
+        .produto:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente o tamanho da div ao passar o mouse sobre ela */
+        }
+        .produto img {
+            max-width: 100%; /* Garante que a imagem não exceda a largura da div */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 5px; /* Arredonda os cantos da imagem */
+        }
+        .produto h2 {
+            font-size: 1.5em; /* Define o tamanho da fonte do título */
+            margin: 10px 0; /* Adiciona uma margem vertical de 10px */
+        }
+        .produto p {
+            font-size: 1em; /* Define o tamanho da fonte do parágrafo */
+            margin: 10px 0; /* Adiciona uma margem vertical de 10px */
+        }
+        .produto .price {
+            font-weight: bold; /* Define o peso da fonte como negrito */
+            font-size: 1.2em; /* Define o tamanho da fonte do preço */
+            color: #333; /* Define a cor do texto como cinza escuro */
+        }
+        .produto button {
+            background-color: #28a745; /* Define a cor de fundo do botão como verde */
+            color: white; /* Define a cor do texto do botão como branco */
+            border: none; /* Remove a borda do botão */
+            padding: 10px 20px; /* Adiciona um padding interno de 10px vertical e 20px horizontal */
+            border-radius: 5px; /* Arredonda os cantos do botão */
+            cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+        }
+        .produto button:hover {
+            background-color: #218838; /* Escurece a cor de fundo do botão ao passar o mouse sobre ele */
+        }
+        @media (max-width: 1200px) {
+            .produto {
+                width: calc(33% - 40px); /* Ajusta a largura da div para 33% menos 40px */
+            }
+        }
+        @media (max-width: 768px) {
+            .produto {
+                width: calc(50% - 40px); /* Ajusta a largura da div para 50% menos 40px */
+            }
+        }
+        @media (max-width: 480px) {
+            .produto {
+                width: calc(100% - 40px); /* Ajusta a largura da div para 100% menos 40px */
+            }
+        }
+        footer {
+            background-color: #333; /* Define a cor de fundo do rodapé como cinza escuro */
+            color: white; /* Define a cor do texto do rodapé como branco */
+            text-align: center; /* Centraliza o texto no rodapé */
+            padding: 10px 0; /* Adiciona um padding vertical de 10px */
+            position: relative; /* Define a posição relativa */
+            bottom: 0; /* Posiciona o rodapé na parte inferior */
+            width: 100%; /* Define a largura do rodapé como 100% */
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>Nome da Empresa</h1> 
+    </header>
+
+    <nav> 
+        <ul> 
+            <li><a href="pagina1.html">Página 1</a></li> 
+            <li><a href="pagina2.html">Página 2</a></li> 
+            <li><a href="pagina3.html">Página 3</a></li> 
+            <li><a href="pagina4.html">Página 4</a></li> 
+        </ul>
+    </nav>
+
+    <div class="container"> 
+       
+        <div class="produto"> 
+            <img src="../imagens/ellasClareador16rs.jpg" alt="Produto 1"> 
+            <h2>Produto 1</h2> 
+            <p class="price">R$ 100,00</p> 
+            <p>Descrição do produto 1.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 2 -->
+        <div class="produto"> 
+            <img src="produto2.jpg" alt="Produto 2"> 
+            <h2>Produto 2</h2> 
+            <p class="price">R$ 200,00</p> 
+            <p>Descrição do produto 2.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 3 -->
+        <div class="produto"> 
+            <img src="produto3.jpg" alt="Produto 3"> 
+            <h2>Produto 3</h2> 
+            <p class="price">R$ 300,00</p> 
+            <p>Descrição do produto 3.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 4 -->
+        <div class="produto"> 
+            <img src="produto4.jpg" alt="Produto 4"> 
+            <h2>Produto 4</h2> 
+            <p class="price">R$ 400,00</p> 
+            <p>Descrição do produto 4.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 5 -->
+        <div class="produto"> 
+            <img src="produto5.jpg" alt="Produto 5"> 
+            <h2>Produto 5</h2> 
+            <p class="price">R$ 500,00</p> 
+            <p>Descrição do produto 5.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 6 -->
+        <div class="produto"> 
+            <img src="produto6.jpg" alt="Produto 6"> 
+            <h2>Produto 6</h2> 
+            <p class="price">R$ 600,00</p> 
+            <p>Descrição do produto 6.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 7 -->
+        <div class="produto"> 
+            <img src="produto7.jpg" alt="Produto 7"> 
+            <h2>Produto 7</h2> 
+            <p class="price">R$ 700,00</p> 
+            <p>Descrição do produto 7.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 8 -->
+        <div class="produto"> 
+            <img src="produto8.jpg" alt="Produto 8"> 
+            <h2>Produto 8</h2> 
+            <p class="price">R$ 800,00</p> 
+            <p>Descrição do produto 8.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 9 -->
+        <div class="produto">
+            <img src="produto9.jpg" alt="Produto 9"> 
+            <h2>Produto 9</h2> 
+            <p class="price">R$ 900,00</p> 
+            <p>Descrição do produto 9.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 10 -->
+        <div class="produto"> 
+            <img src="produto10.jpg" alt="Produto 10"> 
+            <h2>Produto 10</h2> 
+            <p class="price">R$ 1000,00</p> 
+            <p>Descrição do produto 10.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 11 -->
+        <div class="produto"> 
+            <img src="produto11.jpg" alt="Produto 11"> 
+            <h2>Produto 11</h2> 
+            <p class="price">R$ 1100,00</p> 
+            <p>Descrição do produto 11.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 12 -->
+        <div class="produto"> 
+            <img src="produto12.jpg" alt="Produto 12"> 
+            <h2>Produto 12</h2> 
+            <p class="price">R$ 1200,00</p> 
+            <p>Descrição do produto 12.</p> 
+            <button>Comprar</button> 
+        </div> 
+        <!-- Produto 13 -->
+        <div class="produto"> 
+            <img src="produto13.jpg" alt="Produto 13"> 
+            <h2>Produto 13</h2> 
+            <p class="price">R$ 1300,00</p> 
+            <p>Descrição do produto 13.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 14 -->
+        <div class="produto"> 
+            <img src="produto14.jpg" alt="Produto 14"> 
+            <h2>Produto 14</h2> 
+            <p class="price">R$ 1400,00</p> 
+            <p>Descrição do produto 14.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 15 -->
+        <div class="produto">
+            <img src="produto15.jpg" alt="Produto 15"> 
+            <h2>Produto 15</h2>
+            <p class="price">R$ 1500,00</p> 
+            <p>Descrição do produto 15.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 16 -->
+        <div class="produto"> 
+            <img src="produto16.jpg" alt="Produto 16"> 
+            <h2>Produto 16</h2> 
+            <p class="price">R$ 1600,00</p> 
+            <p>Descrição do produto 16.</p> 
+            <button>Comprar</button> 
+        </div> 
+        <!-- Produto 17 -->
+        <div class="produto"> 
+            <img src="produto17.jpg" alt="Produto 17"> 
+            <h2>Produto 17</h2> 
+            <p class="price">R$ 1700,00</p> 
+            <p>Descrição do produto 17.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 18 -->
+        <div class="produto"> 
+            <img src="produto18.jpg" alt="Produto 18"> 
+            <h2>Produto 18</h2> 
+            <p class="price">R$ 1800,00</p> 
+            <p>Descrição do produto 18.</p> 
+            <button>Comprar</button> 
+        </div> 
+
+        <!-- Produto 19 -->
+        <div class="produto"> 
+            <img src="produto19.jpg" alt="Produto 19"> 
+            <h2>Produto 19</h2> 
+            <p class="price">R$ 1900,00</p> 
+            <p>Descrição do produto 19.</p> 
+            <button>Comprar</button> 
+        </div> 
+        <!-- Produto 20 -->
+        <div class="produto"> 
+            <img src="produto20.jpg" alt="Produto 20"> 
+            <h2>Produto 20</h2> 
+            <p class="price">R$ 2000,00</p> 
+            <p>Descrição do produto 20.</p> 
+            <button>Comprar</button> 
+        </div> 
+    </div> 
+
+    <footer> 
+        <p>&copy; 2024 Nome da Empresa. Todos os direitos reservados.</p> 
+    </footer>
+</body>
+</html>
