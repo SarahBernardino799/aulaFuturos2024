@@ -43,9 +43,21 @@ body {
 .content {
     padding: 20px;
     flex: 1;
+    border: #ce8ca5 1px solid;
 }
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-    margin: 10px 0;
+    margin: 20px 0;
+    display: flex;
+    text-align:center;
+    justify-content:space-between;
+    color: rgb(141, 39, 104);
+    text-decoration:solid;
+}
+.content img{
+    max-width: 100%; 
+    height: 200px;
+    
+    
 }
 .content p {
     margin: 10px 0;

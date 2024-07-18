@@ -42,14 +42,17 @@ body {
     background-color: #cb8db838; 
 }
 .content {
-    padding: 20px;
+    padding: 20px 70px;
     flex: 1;
     border: #ce8ca5 1px solid;
 }
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-    margin: 10px 0;
+    margin: 20px 0;
     display: flex;
+    text-align:center;
     justify-content:space-between;
+    color: rgb(141, 39, 104);
+    text-decoration:solid;
 }
 .content p {
     margin: 10px 0;
@@ -63,12 +66,8 @@ body {
 .content a:hover {
     text-decoration: underline;
 }
-.submit {
-    color:white;
-    background-color:  #ce8ca5;
-    border: rgba(255, 255, 255, 0.863) 1px solid;
-    text-align: justify;
-    
+.content li{
+   list-style:none;
 }
 .footer {
     background-color:#ce8ca5; 
